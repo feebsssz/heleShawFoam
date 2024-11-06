@@ -1,5 +1,5 @@
 """
-Script to generate structured mesh for a cylinder, with grading towards the wall.
+Script to generate structured mesh for a hele-shaw duct.
 Edit the input parameters, then run:
         python rectangular_duct.py > system/blockMeshDict
 """
