@@ -18,4 +18,28 @@ To use the code, you will need to have OpenFOAM installed on your system. Follow
 1. Clone this repository:
    ```bash
    git clone https://github.com/feebsssz/heleShawFoam.git
+2. Navigate to the directory:
+   ```bash
+   cd heleShawFoam
+3. Ensure that OpenFOAM is properly set up and source the OpenFOAM environment:
+   ```bash
+   source /path/to/openfoam/etc/bashrc
+4. Compile the solver:
+    ```bash
+    wmake
+
+### Post-Installation
+After installing heleShawFoam and setting up the environment, navigate to the `cases` directory where example cases are provided. You can modify the input parameters based on your simulation needs.
+
+### License
+This project is licensed under the MIT License.
+
+### Contact
+For questions or comments, please reach out to:
+
+Yao Zhang: yao.zhang@uis.no
+
+
+
+
 
