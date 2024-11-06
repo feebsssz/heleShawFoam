@@ -29,7 +29,7 @@ To use the code, you will need to have OpenFOAM installed on your system. Follow
     wmake
 
 ### Post-Installation
-After installing heleShawFoam and setting up the environment, navigate to the `cases` directory where example cases are provided. You can modify the input parameters based on your simulation needs.
+After installing heleShawFoam and setting up the environment, navigate to the `testcase` directory where example cases are provided. You can modify the input parameters based on your simulation needs.
 
 ### License
 This project is licensed under the MIT License.
