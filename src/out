@@ -1,0 +1,44 @@
+Making dependency list for source file heleShawFoam.C
+g++ -std=c++11 -m64 -pthread -DOPENFOAM=2112 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/home/keg/OpenFOAM/OpenFOAM-v2112/applications/solvers/multiphase/VoF -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/phaseSystemModels/twoPhaseInter/incompressibleInterPhaseTransportModel/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/phaseSystemModels/twoPhaseInter/VoFphaseIncompressibleTurbulenceModels/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/applications/solvers/multiphase/interFoam -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/finiteVolume/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/surfMesh/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/meshTools/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/sampling/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/dynamicFvMesh/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/dynamicMesh/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels/geometricVoF/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels/twoPhaseMixture/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels/incompressible/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels/interfaceProperties/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/TurbulenceModels/turbulenceModels/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/TurbulenceModels/incompressible/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/TurbulenceModels/phaseIncompressible/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -iquote. -IlnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/OpenFOAM/lnInclude -I/home/keg/OpenFOAM/OpenFOAM-v2112/src/OSspecific/POSIX/lnInclude   -fPIC -c heleShawFoam.C -o Make/linux64GccDPInt32Opt/heleShawFoam.o
+In file included from /home/keg/OpenFOAM/OpenFOAM-v2112/src/OpenFOAM/lnInclude/postProcess.H:147:0,
+                 from heleShawFoam.C:33:
+./createFields.H: In function ‘int main(int, char**)’:
+./createFields.H:65:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& k1 = coeffs1.lookup("k");
+                               ~~~~~~~~~~~~~~^~~~~
+./createFields.H:66:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& k2 = coeffs2.lookup("k");
+                               ~~~~~~~~~~~~~~^~~~~
+./createFields.H:67:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& n1 = coeffs1.lookup("n");
+                               ~~~~~~~~~~~~~~^~~~~
+./createFields.H:68:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& n2 = coeffs2.lookup("n");
+                               ~~~~~~~~~~~~~~^~~~~
+./createFields.H:65:26: warning: unused variable ‘k1’ [-Wunused-variable]
+ const dimensionedScalar& k1 = coeffs1.lookup("k");
+                          ^~
+./createFields.H:66:26: warning: unused variable ‘k2’ [-Wunused-variable]
+ const dimensionedScalar& k2 = coeffs2.lookup("k");
+                          ^~
+In file included from heleShawFoam.C:41:0:
+createFields.H:65:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& k1 = coeffs1.lookup("k");
+                               ~~~~~~~~~~~~~~^~~~~
+createFields.H:66:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& k2 = coeffs2.lookup("k");
+                               ~~~~~~~~~~~~~~^~~~~
+createFields.H:67:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& n1 = coeffs1.lookup("n");
+                               ~~~~~~~~~~~~~~^~~~~
+createFields.H:68:45: error: invalid initialization of reference of type ‘const dimensionedScalar& {aka const Foam::dimensioned<double>&}’ from expression of type ‘Foam::ITstream’
+ const dimensionedScalar& n2 = coeffs2.lookup("n");
+                               ~~~~~~~~~~~~~~^~~~~
+createFields.H:65:26: warning: unused variable ‘k1’ [-Wunused-variable]
+ const dimensionedScalar& k1 = coeffs1.lookup("k");
+                          ^~
+createFields.H:66:26: warning: unused variable ‘k2’ [-Wunused-variable]
+ const dimensionedScalar& k2 = coeffs2.lookup("k");
+                          ^~
+/home/keg/OpenFOAM/OpenFOAM-v2112/wmake/rules/General/transform:34: recipe for target 'Make/linux64GccDPInt32Opt/heleShawFoam.o' failed
+make: *** [Make/linux64GccDPInt32Opt/heleShawFoam.o] Error 1
