@@ -1,4 +1,4 @@
-## heleShawFoam: 2D OpenFOAM Code for Simulating Displacement Flows of Non-Newtonian Power-Law Fluids in Hele-Shaw cells.
+## heleShawFoam: 2D OpenFOAM code for simulating power-law fluids displacement in hele-shaw cells.
 
 ### Overview
 
@@ -21,10 +21,10 @@ To use the code, you will need to have OpenFOAM installed on your system. Follow
 2. Navigate to the directory:
    ```bash
    cd heleShawFoam
-3. Ensure that OpenFOAM is properly set up and source the OpenFOAM environment:
+* Ensure that OpenFOAM is properly set up and source the OpenFOAM environment:
    ```bash
    source /path/to/openfoam/etc/bashrc
-4. Compile the solver:
+3. Compile the solver:
     ```bash
     wmake
 
